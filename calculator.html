@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" type="image/x-icon" href="./images/cal.png">
+    <style>
+        .container{
+            border: 1px solid black;
+            width: 175px;
+            padding:6px;
+            background-image: url('./images/bg.jpg');
+        }
+        .container2{
+            display:grid;
+            grid-template-columns: 43px 43px 43px 43px;
+
+        }
+        .button{
+            padding:6px 14px;
+            font-weight: bold;
+            margin:2px;
+        }
+        .container1{
+            margin-bottom: 5px;
+        }
+        .value-input{
+            height:20px;
+            border-radius: 3px;
+            border:2px solid brown
+        }
+        #equalto{
+            background-color: rgb(48, 179, 102);
+            border:1px solid rgb(48, 179, 102);
+            padding-left:35px;
+            padding-right: 35px;
+        }
+        #equalto:active{
+            background-color: rgb(145, 215, 145);
+            border:1px solid rgb(145, 215, 145);
+            color:white;
+        }
+    
+    </style>
+</head>
+<body>
+    <center>
+    <h2 >CALCULATOR</h2>
+    <div class="container">
+        <div class="container1">
+            <input class="value-input" type="text" required>
+        </div>
+        <div class="container2">
+            <div ><input class="button" type="button" value="1"></div>
+            <div ><input class="button" type="button" value="2"></div>
+            <div ><input class="button" type="button" value="3"></div>
+            <div ><input class="button" class="op" type="button" value="+"></div>
+            <div ><input class="button" type="button" value="4"></div>
+            <div ><input class="button" type="button" value="5"></div>
+            <div ><input class="button" type="button" value="6"></div>
+            <div ><input class="button" class="op" type="button" value=" -"></div>
+            <div ><input class="button" type="button" value="7"></div>
+            <div ><input class="button" type="button" value="8"></div>
+            <div ><input class="button" type="button" value="9"></div>
+            <div ><input class="button"  class="op" type="button" value=" *"></div>
+            <div ><input class="button" type="button" value="0"></div>
+            <div ><input class="button"  class="op" type="button" value=" ("></div>
+            <div ><input class="button"  class="op" type="button" value=" )"></div>
+            <div ><input class="button"  class="op" type="button" value=" /"></div>
+            <div ><input class="button"  class="op" type="button" value=" ."></div>
+            <div ><input class="button"  class="op" type="button" value="^"></div>
+            <div ><input class="button" id="equalto" type="submit" value="="></div>
+        </div>
+    </div>
+    </center>
+</body>
+</html>

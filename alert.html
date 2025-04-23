@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="number" id="greet">
+        <input type="number" id="greet1">
+        <input type="button" onclick="test()" value="Click me!">
+        <table id="table" border="1" cellpadding="20px" cellspacing="0"></table><br>
+        <input type="radio" name="sample" value="1">one
+        <input type="radio" name="sample" value="2">two
+        <input type="button" value="click" onclick="test2()">
+    </div>
+    <script>
+        function test(){
+            var n=document.getElementById('greet').value;
+            var m=document.getElementById('greet1').value;
+            for(var i=0;i<n;i++){
+                var tabler=document.createElement('tr');
+                for(let j=0;j<m;j++){
+                    var tabled=document.createElement('td');
+                    tabler.appendChild(tabled);
+                }
+                document.getElementById('table').appendChild(tabler);
+            }
+        }
+        function test2(){
+            var name=document.getElementsByName("sample").value;
+            alert(name);
+        }
+    </script>
+</body>
+</html>
