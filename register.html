@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <title>register page</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon2.png">
+  </head>
+  <body bgcolor="lightpink">
+    <form>
+      <table border="1" cellpadding="5px" cellspacing="0" bgcolor="lightgrey">
+        <thead>
+          <tr><th colspan="2">Registration Page</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Name:</td>
+            <td><input type="text" placeholder="Enter your name..." required autofocus/></td>
+          </tr>
+          <tr>
+            <td>Contact:</td>
+            <td><input type="number" placeholder="Enter your mobile number..." required/></td>
+          </tr>
+          <tr>
+            <td>Email:</td>
+            <td><input type="email" placeholder="eg:-abc@gmail.com" required/></td>
+          </tr>
+          <tr>
+            <td>DOB:</td>
+            <td><input type="date" required/></td>
+          </tr>
+          <tr>
+            <td>Branch:</td>
+            <td>
+              <select>
+                <option value="cse">CSE</option>
+                <option value="it">IT</option>
+                <option value="ece">ECE</option>
+                <option value="eee">EEE</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Gender:</td>
+            <td>
+              <input type="radio" name="gender" checked/>Male
+              <input type="radio" name="gender"/>Female
+            </td>
+          </tr>
+          <tr>
+            <td>Languages:</td>
+            <td>
+              <input type="checkbox"/>English
+              <input type="checkbox"/>Hindi
+              <input type="checkbox">Telugu
+            </td>
+          </tr>
+          <tr>
+            <td>Address:</td>
+            <td><textarea rows="4" cols="20"></textarea></td>
+          </tr>
+          <tr>
+            <td>Resume</td>
+            <td><input type="file"/></td>
+          </tr>
+          <tr>
+            <td align="center" colspan="2"><input type="submit" value="Register"/></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr><td colspan="2" align="center">Old user <a href="./login.html">Click Here...</a></td></tr>
+        </tfoot>
+      </table>
+    </form>
+  </body>
+</html>
