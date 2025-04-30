@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <sript src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></sript>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="mydiv"></div>
+    <sript type="text/babel">
+        function Hello(){
+            return (
+                <div><h1>hello</h1></div>
+            );
+        }
+        const container= document.getElementById('mydiv');
+        const root= ReactDOM.createRoot(container);
+        root.render(<Hello />)
+    </sript>
+</body>
+</html>
